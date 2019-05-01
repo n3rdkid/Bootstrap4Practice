@@ -12,9 +12,9 @@
   <title>Bootstrap Theme</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" id="home">
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <nav id="main-nav" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <div class="container">
       <a href="index.html" class="navbar-brand">
         LoopLAB
@@ -80,82 +80,87 @@
           </div>
           <div class="col-lg-4">
             <div class="card bg-primary card-form text-center">
-             <card class="card-body">
-               <h3>Sign Up</h3>
-               <p>Please fill out this form to register.</p>
-               <form>
-                 <div class="form-group">
-                   <input class="form-control form-control-lg" placeholder="Username" type="text">
-                 </div>
-                 <div class="form-group">
+              <card class="card-body">
+                <h3>Sign Up</h3>
+                <p>Please fill out this form to register.</p>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control form-control-lg" placeholder="Username" type="text">
+                  </div>
+                  <div class="form-group">
                     <input class="form-control form-control-lg" placeholder="Email" type="email">
                   </div>
                   <div class="form-group">
-                      <input class="form-control form-control-lg" placeholder="Password" type="password">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control form-control-lg" placeholder="Confirm Password" type="password">
-                      </div>
-                      <button class="btn btn-outline-light btn-block" type="submit">Submit</button>
-               </form>
-             </card>
+                    <input class="form-control form-control-lg" placeholder="Password" type="password">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control form-control-lg" placeholder="Confirm Password" type="password">
+                  </div>
+                  <button class="btn btn-outline-light btn-block" type="submit">Submit</button>
+                </form>
+              </card>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-<!-- Explore Head -->
-<section id="explore-head-section">
-  <div class="container">
-    <div class="row">
-      <div class="col text-center py-5">
-        <h1 class="display-4">Explore</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo, facilis quidem vero cumque inventore excepturi ea dolore doloribus maxime.</p>
-        <button class="btn btn-outline-secondary">
-          Find Out More
-        </button>
+  <!-- Explore Head -->
+  <section id="explore-head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">Explore</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo, facilis quidem vero
+            cumque inventore excepturi ea dolore doloribus maxime.</p>
+          <button class="btn btn-outline-secondary">
+            Find Out More
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section id="explore-section" class="bg-light text-muted py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="./src/assets/images/explore-section1.jpg" class="rounded-circle img-fluid mb-3" alt="Explore image">
-      </div>
-      <div class="col-md-6">
-        <h3>Explore & Connect</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores saepe voluptate ex cumque aspernatur minima minus quo sequi porro sint.</p>
-        <div class="d-flex">
-          <div class="p-4 align-self-start">
-            <i class="fas fas-check fa-2x"></i>
-          </div>
-          <div class="p-4 align-self-end">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, voluptatem ullam! Ipsum ex voluptatibus suscipit!</p>
-            </div>
+  </section>
+  <section id="explore-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./src/assets/images/explore-section1.jpg" class="rounded-circle img-fluid mb-3" alt="Explore image">
         </div>
-        <div class="d-flex">
+        <div class="col-md-6">
+          <h3>Explore & Connect</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores saepe voluptate ex cumque aspernatur
+            minima minus quo sequi porro sint.</p>
+          <div class="d-flex">
             <div class="p-4 align-self-start">
               <i class="fas fas-check fa-2x"></i>
             </div>
             <div class="p-4 align-self-end">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt mollitia delectus dignissimos officia? Quidem, voluptatibus!</p>
-              </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, voluptatem ullam! Ipsum ex
+                voluptatibus suscipit!</p>
+            </div>
           </div>
-        
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fas-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt mollitia delectus dignissimos
+                officia? Quidem, voluptatibus!</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Create Head -->
-<section id="create-head-section" class="bg-primary">
+  </section>
+  <!-- Create Head -->
+  <section id="create-head-section" class="bg-primary">
     <div class="container">
       <div class="row">
         <div class="col text-center py-5">
           <h1 class="display-4">Create</h1>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo, facilis quidem vero cumque inventore excepturi ea dolore doloribus maxime.</p>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo, facilis quidem vero
+            cumque inventore excepturi ea dolore doloribus maxime.</p>
           <button class="btn btn-outline-light">
             Find Out More
           </button>
@@ -171,24 +176,27 @@
         </div>
         <div class="col-md-6 order-1">
           <h3>Create your passion</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores saepe voluptate ex cumque aspernatur minima minus quo sequi porro sint.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores saepe voluptate ex cumque aspernatur
+            minima minus quo sequi porro sint.</p>
           <div class="d-flex">
             <div class="p-4 align-self-start">
               <i class="fas fas-check fa-2x"></i>
             </div>
             <div class="p-4 align-self-end">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, voluptatem ullam! Ipsum ex voluptatibus suscipit!</p>
-              </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, voluptatem ullam! Ipsum ex
+                voluptatibus suscipit!</p>
+            </div>
           </div>
           <div class="d-flex">
-              <div class="p-4 align-self-start">
-                <i class="fas fas-check fa-2x"></i>
-              </div>
-              <div class="p-4 align-self-end">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt mollitia delectus dignissimos officia? Quidem, voluptatibus!</p>
-                </div>
+            <div class="p-4 align-self-start">
+              <i class="fas fas-check fa-2x"></i>
             </div>
-          
+            <div class="p-4 align-self-end">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt mollitia delectus dignissimos
+                officia? Quidem, voluptatibus!</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -197,53 +205,124 @@
   <!-- Share Head -->
 
   <section id="share-head-section" class="bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center py-5">
-            <h1 class="display-4">Share</h1>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo, facilis quidem vero cumque inventore excepturi ea dolore doloribus maxime.</p>
-            <button class="btn btn-outline-light">
-              Find Out More
-            </button>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">Share</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo, facilis quidem vero
+            cumque inventore excepturi ea dolore doloribus maxime.</p>
+          <button class="btn btn-outline-light">
+            Find Out More
+          </button>
         </div>
       </div>
-    </section>
-    <section id="share-section" class="bg-light text-muted py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="./src/assets/images/share-section1.jpg" class="rounded-circle img-fluid mb-3" alt="Explore image">
-          </div>
-          <div class="col-md-6">
-            <h3>Share What You Create</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores saepe voluptate ex cumque aspernatur minima minus quo sequi porro sint.</p>
-            <div class="d-flex">
-              <div class="p-4 align-self-start">
-                <i class="fas fas-check fa-2x"></i>
-              </div>
-              <div class="p-4 align-self-end">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, voluptatem ullam! Ipsum ex voluptatibus suscipit!</p>
-                </div>
+    </div>
+  </section>
+  <section id="share-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./src/assets/images/share-section1.jpg" class="rounded-circle img-fluid mb-3" alt="Explore image">
+        </div>
+        <div class="col-md-6">
+          <h3>Share What You Create</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores saepe voluptate ex cumque aspernatur
+            minima minus quo sequi porro sint.</p>
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fas-check fa-2x"></i>
             </div>
-            <div class="d-flex">
-                <div class="p-4 align-self-start">
-                  <i class="fas fas-check fa-2x"></i>
-                </div>
-                <div class="p-4 align-self-end">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt mollitia delectus dignissimos officia? Quidem, voluptatibus!</p>
+            <div class="p-4 align-self-end">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, voluptatem ullam! Ipsum ex
+                voluptatibus suscipit!</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="p-4 align-self-start">
+              <i class="fas fas-check fa-2x"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt mollitia delectus dignissimos
+                officia? Quidem, voluptatibus!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-4">
+          <h3>LoopLap</h3>
+          <p>Copyright &copy;</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+          <div class="modal fade text-dark" id="contactModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-title">
+                    <h5>Contact Us</h5>
                   </div>
+                  <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary btn-block">Submit</button>
+                </div>
               </div>
-            
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  <script src="/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <!-- <script src="./bootstrap/dist/js/popper.min.js"></script> -->
-  <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+    </div>
+  </footer>
 
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+  </script>
   <script>
+    //Init ScrollSpy
+    $('body').scrollspy({
+      target: '#main-nav'
+    });
+
+    // Smooth Scrolling
+    $('#main-nav a').on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        const hash = this.hash;
+        $('html,  body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+            window.location.hash = hash;
+          });
+      }
+    });
   </script>
 </body>
 
