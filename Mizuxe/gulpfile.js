@@ -1,6 +1,6 @@
 const gulp=require('gulp');
 const gulpSass=require('gulp-sass');
-const gulpBrowserSync=require('browser-sync').init();
+const gulpBrowserSync=require('browser-sync').create();
 
 function sass()
 {
@@ -13,6 +13,11 @@ function sass()
 }
 function watch()
 {
+  browserSync.init({
+    server: {
+        baseDir: "./"
+    }
+});
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss'], sass);
   gulp.watch('*.html').on('change',browserSync.reload);
 }
