@@ -4,7 +4,7 @@ const browserSync=require('browser-sync').create();
 
 function sass()
 {
-  return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss','./src/scss/*.scss'])
+  return gulp.src(['node_modules/bootstrap/scss/*.scss','./src/scss/*.scss'])
   .pipe(gulpSass({
       outputStyle: 'expanded'
   }))
@@ -23,7 +23,7 @@ function watch()
         baseDir: "./"
     }
 });
-  gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss'], sass);
+  gulp.watch(['node_modules/bootstrap/scss/*.scss','src/scss/*.scss'], sass);
   gulp.watch('*.html').on('change',browserSync.reload);
 }
 
