@@ -39,3 +39,22 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#authors img {
+  margin-top: -50px;
+}
+
+#authors .card:hover {
+  background: #3292a6;
+  color: white;
+}
+
+#authors .fab {
+  color: white;
+}
