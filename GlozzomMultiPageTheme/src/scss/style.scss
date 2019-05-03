@@ -74,3 +74,16 @@ body{
 .about-img{
   margin-top:-50px;
 }
+#faq{
+  .card{
+    border:#444;
+  }
+  a{
+    text-decoration: none;
+    color:#fff;
+  }
+  .card-body,.card-header{
+    background:#333;
+
+  }
+}
