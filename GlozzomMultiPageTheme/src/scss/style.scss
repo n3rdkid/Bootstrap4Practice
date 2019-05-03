@@ -1,3 +1,6 @@
+body{
+  overflow-x:hidden;
+}
 .navbar{
   .nav-link{
   text-transform: uppercase;
@@ -59,4 +62,15 @@
   a{
     color:white;
   }
+}
+#page-header{
+  background:url('../images/image1.jpg');
+  background-position:0 -360px;
+  background-attachment: fixed;
+  color:#fff;
+  border-bottom:1px #eee solid;
+  padding-top:50px;
+}
+.about-img{
+  margin-top:-50px;
 }
