@@ -8,9 +8,12 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./src/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <title>Glozzom Multi Page Theme</title>
 </head>
 
@@ -127,7 +130,8 @@
         <div class="col">
           <div class="container pt-5">
             <h1>Are You Ready To Get Started</h1>
-            <p class="d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia eius cumque qui velit, itaque facere aliquam aperiam accusamus laborum hic?</p>
+            <p class="d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia eius cumque
+              qui velit, itaque facere aliquam aperiam accusamus laborum hic?</p>
           </div>
         </div>
       </div>
@@ -139,7 +143,8 @@
       <div class="row">
         <div class="col-md-6 align-self-center">
           <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad ab cumque obcaecati impedit provident vel aliquam odit nemo laboriosam.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad ab cumque obcaecati impedit provident vel
+            aliquam odit nemo laboriosam.
 
           </p>
           <a href="#" class="btn btn-outline-danger btn-lg">Learn More</a>
@@ -156,16 +161,64 @@
       <div class="row">
         <div class="col">
           <div class="container p-5">
-            <a href="#" class="video" data-video="https://www.youtube.com/embed/JT0wx27J9xs"
-            data-toggle="modal" data-target="#videoModal">
-            <i class="fas fa-play fa-3x"></i>
-          </a>
-          <h1>See What We Do</h1>
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/JT0wx27J9xs" data-toggle="modal"
+              data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See What We Do</h1>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- PHOTO GALLERY -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">Photo Gallery</h1>
+      <p class="text-center">Check Out Our Photos</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/560x560" data-gallery="img-gallery" data-height="560"
+            data-toggle="lightbox" data-width="560">
+            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/560x560" data-gallery="img-gallery" data-height="560"
+            data-toggle="lightbox" data-width="560">
+            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/561x561" data-gallery="img-gallery" data-height="561"
+            data-toggle="lightbox" data-width="561">
+            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row mb-4">
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/564x564" data-gallery="img-gallery" data-height="560"
+              data-toggle="lightbox" data-width="564">
+              <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/565x565" data-gallery="img-gallery" data-height="560"
+              data-toggle="lightbox" data-width="565">
+              <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/561x566" data-gallery="img-gallery" data-height="561"
+              data-toggle="lightbox" data-width="561">
+              <img src="https://source.unsplash.com/random/566x566" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!--  -->
   <!-- VIDEO MODAL -->
   <div class="modal fade" id="videoModal">
     <div class="modal-dialog">
@@ -184,11 +237,20 @@
   <script src="src/js/jquery.min.js"></script>
   <script src="src/js/popper.min.js"></script>
   <script src="src/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
   <script>
     // Configure Slider
     $('carousel').carousel({ interval: 6000, pause: 'hover' });
-   // Video Play
-   $(function () {
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+    // Video Play
+    $(function () {
       // Auto play modal video
       $(".video").click(function () {
         var theModal = $(this).data("target"),
@@ -201,8 +263,8 @@
       });
     });
 
- 
- </script>
+
+  </script>
 </body>
 
 </html>
