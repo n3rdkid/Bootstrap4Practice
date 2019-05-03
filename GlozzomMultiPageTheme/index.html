@@ -133,6 +133,52 @@
       </div>
     </div>
   </section>
+  <!-- INFO SECTION -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad ab cumque obcaecati impedit provident vel aliquam odit nemo laboriosam.
+
+          </p>
+          <a href="#" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="./src/images/laptop.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--VIDEO PLAY  -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/JT0wx27J9xs"
+            data-toggle="modal" data-target="#videoModal">
+            <i class="fas fa-play fa-3x"></i>
+          </a>
+          <h1>See What We Do</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350px" allowfullscreen width="100%"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="src/js/jquery.min.js"></script>
@@ -141,7 +187,22 @@
   <script>
     // Configure Slider
     $('carousel').carousel({ interval: 6000, pause: 'hover' });
-  </script>
+   // Video Play
+   $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+
+ 
+ </script>
 </body>
 
 </html>
