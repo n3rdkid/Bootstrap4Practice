@@ -80,7 +80,8 @@
             <div class="carousel-caption d-none d-sm-block mb-5">
               <h1 class="display-3">Heading Three</h1>
               <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio illo ut laborum voluptatem doloribus doloremque sapiente exercitationem a velit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio illo ut laborum voluptatem
+                doloribus doloremque sapiente exercitationem a velit?
               </p>
               <a href="#" class="btn btn-success btn-lg">Learn More</a>
             </div>
@@ -91,18 +92,41 @@
         <i class="carousel-control-prev-icon"></i>
       </a>
       <a href="#myCarousel" class="carousel-control-next" data-slide="next">
-      <i class="carousel-control-next-icon"></i>  
-    </a>
+        <i class="carousel-control-next-icon"></i>
+      </a>
     </div>
   </section>
+  <!-- HOME ICONS SECITON -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cog fa-3x mb-2"></i>
+          <h3>Turning Gears</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestias.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cloud fa-3x mb-2"></i>
+          <h3>Sending Data</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestias.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cart-plus fa-3x mb-2"></i>
+          <h3>Making Money</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestias.</p>
+        </div>
 
+      </div>
+    </div>
+  </section>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="src/js/jquery.min.js"></script>
   <script src="src/js/popper.min.js"></script>
   <script src="src/js/bootstrap.min.js"></script>
   <script>
-
+    // Configure Slider
+    $('carousel').carousel({ interval: 6000, pause: 'hover' });
   </script>
 </body>
 
